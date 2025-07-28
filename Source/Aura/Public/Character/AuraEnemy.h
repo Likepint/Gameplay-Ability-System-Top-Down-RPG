@@ -13,6 +13,8 @@ class AURA_API AAuraEnemy
 	GENERATED_BODY()
 
 public:
+	AAuraEnemy();
+	
 	virtual void HighlightActor() override;
 	virtual void UnHighlightActor() override;
 
