@@ -32,5 +32,8 @@ void AAuraEnemy::BeginPlay()
 {
 	Super::BeginPlay();
 
+	// check(AbilitySystemComponent);
+	// -> BeginPlay()에서 호출하므로 Null이 아님을 보장 가능하여 필요 없는 코드
+    // 소유자와 아바타 모두 자기 자신(Enemy)으로 설정
 	AbilitySystemComponent->InitAbilityActorInfo(this, this);
 }
